@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div id="container">
+        <div id="que1"> 
+            <p>que.1. = What is value of 8*5?</p>
+            <label><input type="radio" name="q1" value="15"> 15</label><br>
+            <label><input type="radio" name="q1" value="29"> 29</label><br>
+            <label><input type="radio" name="q1" value="40" id="ans1"> 40</label><br>
+            <label><input type="radio" name="q1" value="38"> 38</label><br><hr>
+            <button onclick="que2()">Que 2</button>
+        </div>
+    
+        <div id="que" style="display: none;">
+            <p>que.2. = What is value of 3*9?</p>
+            <label><input type="radio" name="q2" value="27" id="ans2"> 27</label><br>
+            <label><input type="radio" name="q2" value="14"> 14</label><br>
+            <label><input type="radio" name="q2" value="28"> 28</label><br>
+            <label><input type="radio" name="q2" value="13"> 13</label><br><hr>
+            <button onclick="que3()">Que 3</button>
+        </div>
+    
+        <div id="qb3" style="display: none;">
+            <p>que.3. = What is the capital of India?</p>
+            <label><input type="radio" name="q3" value="delhi" id="ans3"> Delhi</label><br>
+            <label><input type="radio" name="q3" value="mumbai"> Mumbai</label><br>
+            <label><input type="radio" name="q3" value="haryana"> Haryana</label><br>
+            <label><input type="radio" name="q3" value="chandigarh"> Chandigarh</label><br><hr>
+            <button onclick="submit()">Submit</button>
+        </div>
+    </div>
+ <div id="redo" style="display: none;">   <button onclick="redo()">redo</button></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
